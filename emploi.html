@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <title>Job board HTML-5 Template </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/price_rangs.css">
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="stylesheet" href="assets/css/slicknav.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/style.css"> -->
+
+        <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+    
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .slider-area{
+                margin: 0;
+                padding: 0;
+                background-color: #0d4671;
+                position: relative;
+                overflow: hidden;
+                opacity: 0.3;
+            }
+        </style>
+   </head>
+<body>
+    <div class="">
+    <div class="slider-area ">
+        <div class="single-slider section-overly slider-height2 d-flex align-items-center" style="background-image: url(&quot;assets/img/hero/about.jpg&quot;); height: 400px; z-index: 1; opacity: 0.6;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center">
+                            <h2 style="text-align: center; font-size: 50px; color: white; font-weight: bold;" >Post your Job</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" id="signup-form" class="signup-form" action="#">
+                <div>
+                    <h3>LOGIN OR CREATE AN ACCOUNT</h3>
+                    <fieldset>
+                        <h2>Login or create an account</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step so we can build your account</p>
+                        <div class="fieldset-content">
+                            <a href="#" class="btn btn-secondary btn-lg" style="margin-right: 20px;">Register</a>
+                            <a href="#" class="btn btn-lg btn-primary"><span class="hidden-xs">Already have account ? </span><span class="login-label">Login</span></a>
+                            <p style="margin-top: 50px;"></p>
+                            <div class="form-group text-center noo-ajax-result" style="display: none;"></div>
+                                <div class="form-group row justify-content-center" style="margin-bottom: 50px;">
+                                    <p style="margin-right: 20px; cursor: pointer;"> <img src="images/google.png" style="height: 30px; width: 30px;"> </p>
+                                    <p style="margin-right: 20px; cursor: pointer;"> <img src="images/facebook.png" style="height: 30px; width: 30px;"> </p>
+                                    <p style="margin-right: 20px; cursor: pointer;"> <img src="images/twitter.png" style="height: 30px; width: 30px;"> </p>
+                                    <p style="margin-right: 20px; cursor: pointer;"> <img src="images/linkedin.png" style="height: 30px; width: 30px;"> </p>
+                                </div>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_log" class="col-sm-3 control-label"> Username </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="log form-control" id="61601abe5bd2c_log" name="log" value="" placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Password</label>
+                                    <div class="col-sm-9">
+                                        <input type="password" id="61601abe5bd2c_pwd" class="pwd form-control" value="" name="pwd" placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+                        <!--<div class="jpanel-body">
+                            <div class="account-actions">
+                                <div class="btn-toolbar">
+                                    <a href="#" class="btn btn-secondary btn-lg" style="margin-right: 20px;">Register</a>
+                                    <a href="#" class="btn btn-lg btn-primary"><span class="hidden-xs">Already have account ? </span><span class="login-label">Login</span></a>
+                                </div>
+                            </div>
+                            <div class="account-form">
+                                <div class="account-log-form">
+                                    <form method="POST" style="max-width: 600px; margin: auto" class="noo-ajax-login-form form-horizontal" action="">
+                                    <div style="display: none">
+                                        <input type="hidden" name="action" value="noo_ajax_login">
+                                        <input type="hidden" class="security" name="security" value="88307edd8f">
+                                    </div>
+                                    <div class="form-group text-center noo-ajax-result" style="display: none"></div>
+                                        <br>
+                                        <div class="social-container">
+                                            <ul class="social-icons">
+                                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="form-group row ">
+                                            <label for="61601abe5bd2c_log" class="col-sm-3 control-label"> Username </label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="log form-control" id="61601abe5bd2c_log" name="log" required="" value="" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row ">
+                                            <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Password</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" id="61601abe5bd2c_pwd" class="pwd form-control" required="" value="" name="pwd" placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="check">
+                                            <input type="checkbox" id="todo" name="todo" value="todo">
+                                            <label for="todo" data-content="Get out of bed">Remember Me</label>
+                                        </div>
+                                        <div></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>-->
+                    </fieldset>
+
+                    <h3>CHOOSE A PACKAGE</h3>
+                    <fieldset>
+                        <h2>Choose a package</h2>
+                        <p class="desc">Please enter your infomation and proceed to next step so we can build your account</p>
+                        <div class="fieldset-content">
+                            <div class="form-group">
+                                <label for="find_bank" class="form-label">Find Your Bank</label>
+                                <div class="form-find">
+                                    <input type="text" name="find_bank" id="find_bank" placeholder="Ex. Techcombank" />
+                                    <input type="submit" value="Search" class="submit">
+                                    <span class="form-icon"><i class="zmdi zmdi-search"></i></span>
+                                </div>
+                            </div>
+                            <div class="choose-bank">
+                                <p class="choose-bank-desc">Or choose from these popular bank</p>
+                                <div class="form-radio-flex">
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="choose_bank" id="bank_1" value="bank_1" checked="checked" />
+                                        <label for="bank_1"><img src="images/bank-1.jpg" alt=""></label>
+                                    </div>
+
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="choose_bank" id="bank_2" value="bank_2" />
+                                        <label for="bank_2"><img src="images/bank-2.jpg" alt=""></label>
+                                    </div>
+
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="choose_bank" id="bank_3" value="bank_3" />
+                                        <label for="bank_3"><img src="images/bank-3.jpg" alt=""></label>
+                                    </div>
+
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="choose_bank" id="bank_4" value="bank_4" />
+                                        <label for="bank_4"><img src="images/bank-4.jpg" alt=""></label>
+                                    </div>
+
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="choose_bank" id="bank_5" value="bank_5" />
+                                        <label for="bank_5"><img src="images/bank-5.jpg" alt=""></label>
+                                    </div>
+
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="choose_bank" id="bank_6" value="bank_6" />
+                                        <label for="bank_6"><img src="images/bank-6.jpg" alt=""></label>
+                                    </div>
+                                    
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="choose_bank" id="bank_7" value="bank_7" />
+                                        <label for="bank_7"><img src="images/bank-7.jpg" alt=""></label>
+                                    </div>
+
+                                    <div class="form-radio-item">
+                                        <input type="radio" name="choose_bank" id="bank_8" value="bank_8" />
+                                        <label for="bank_8"><img src="images/bank-8.jpg" alt=""></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <h3> CAMPANY & VACANCY</h3>
+                    <fieldset>
+                        <h2>Company & Vacancy</h2>
+                        <p class="desc">Set up your money limit to reach the future plan</p>
+                        <div class="fieldset-content">
+                            <div class="donate-us">
+                                <!--<div class="price_slider ui-slider ui-slider-horizontal">
+                                    <div id="slider-margin"></div>
+                                    <p class="your-money">
+                                        Your money you can spend per month :
+                                        <span class="money" id="value-lower"></span>
+                                        <span class="money" id="value-upper"></span>
+                                    </p>
+                                </div>-->
+                                <h2>Job Details</h2>
+                                <br>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_log" class="col-sm-3 control-label"> Job Title * </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="log form-control" id="61601abe5bd2c_log" name="log" value="" placeholder="Enter a short title for your job">
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_log" class="col-sm-3 control-label"> Job Description * </label>
+                                    <div class="col-sm-9">
+                                       <textarea rows="10" style="width: 111vh; border: 1px solid rgb(211, 207, 207); padding: 10px; color: rgb(90, 89, 89); border-radius: 3px;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Postal Code</label>
+                                    <div class="col-sm-9">
+                                        <input type="password" id="61601abe5bd2c_pwd" class="pwd form-control" value="" name="pwd" placeholder="Enter ryour postal code">
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Job Categories *</label>
+                                    <div class="col-sm-9">
+                                        <select class="log form-control" aria-label="Default select example">
+                                            <option selected>Select Job Categories</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Job Types *</label>
+                                    <div class="col-sm-9">
+                                        <select class="log form-control" aria-label="Default select example">
+                                            <option selected>Select Job Type</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Job Tag</label>
+                                    <div class="col-sm-9">
+                                        <select class="log form-control" aria-label="Default select example">
+                                            <option selected>Select Job Tag</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>  
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_log" class="col-sm-3 control-label"> Salary Offer </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="log form-control" id="61601abe5bd2c_log" name="log" value="" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_log" class="col-sm-3 control-label"> Closing Date </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="log form-control" id="61601abe5bd2c_log" name="log" value="" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Experience Level</label>
+                                    <div class="col-sm-9">
+                                        <select class="log form-control" aria-label="Default select example">
+                                            <option selected>Select Experience Level</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div> 
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Total Years Experience</label>
+                                    <div class="col-sm-9">
+                                        <select class="log form-control" aria-label="Default select example">
+                                            <option selected>Select Total Years Experience</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>   
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Carreer Level</label>
+                                    <div class="col-sm-9">
+                                        <select class="log form-control" aria-label="Default select example">
+                                            <option selected>Select Carreer Level</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div> 
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Gender</label>
+                                    <div class="col-sm-9">
+                                        <select class="log form-control" aria-label="Default select example">
+                                            <option selected>Select Gender</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>   
+                                <div class="form-group row ">
+                                    <label for="61601abe5bd2c_pwd" class="col-sm-3 control-label">Qualifications</label>
+                                    <div class="col-sm-9">
+                                        <select class="log form-control" aria-label="Default select example">
+                                            <option selected>Select Qualificartions</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>     
+                            </div>
+                           
+                        </div>
+                    </fieldset>
+
+                    <h3>PREVIEW AND SUBMIT YOUR JOB</h3>
+                    <fieldset>
+                        <h2>Preview and submit your job</h2>
+                        <p class="desc">Set up your money limit to reach the future plan</p>
+                        <div class="fieldset-content">
+                            <div class="donate-us">
+                                <div class="price_slider ui-slider ui-slider-horizontal">
+                                    <div id="slider-margin"></div>
+                                    <p class="your-money">
+                                        Your money you can spend per month :
+                                        <span class="money" id="value-lower"></span>
+                                        <span class="money" id="value-upper"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

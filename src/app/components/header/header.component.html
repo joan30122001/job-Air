@@ -1,7 +1,7 @@
 <header>
     <!-- Header Start -->
-   <div class="header-area header-transparrent">
-       <div class="headder-top header-sticky">
+    <div class="header-area header-transparrent">
+        <div class="headder-top header-sticky">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-2">
@@ -14,37 +14,233 @@
                         <div class="menu-wrapper">
                             <!-- Main-menu -->
                             <div class="main-menu">
-                                <nav class="d-none d-lg-block">
-                                    <ul id="navigation">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a style="cursor: pointer;" routerLink="/job-listing">Find a Jobs </a></li>
-                                        <li><a style="cursor: pointer;" routerLink="/about">About</a></li>
-                                        <li><a href="#">Page</a>
-                                            <ul class="submenu">
-                                                <li><a style="cursor: pointer;" routerLink="/blog">Blog</a></li>
-                                                <li><a  style="cursor: pointer;" routerLink="/blog-details">Blog Details</a></li>
-                                                <li><a  style="cursor: pointer;" routerLink="/element">Elements</a></li>
-                                                <li><a  style="cursor: pointer;" routerLink="/job-details">job Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a style="cursor: pointer;" routerLink="/contact">Contact</a></li>
-                                    </ul>
+
+                                <nav class="navbar navbar-expand-lg navbar-light">
+
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarNavAltMarkup" aria-controls="navbarNav"
+                                        aria-expanded="false" aria-label="toogle-navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                        <ul id="navigation navbar-nav">
+                                            <li><a href="index.html" class="nav-link">Home</a></li>
+                                            <li><a style="cursor: pointer;" routerLink="/job-listing">Find a Jobs </a>
+                                            </li>
+                                            <li><a style="cursor: pointer;" routerLink="/about">About</a></li>
+                                            <li><a href="#" class="nav-link">Page</a>
+                                                <ul class="submenu">
+                                                    <li class="nav-item active"><a style="cursor: pointer;"
+                                                            routerLink="/blog" class="nav-link">Blog</a></li>
+                                                    <li class="nav-item"><a style="cursor: pointer;"
+                                                            routerLink="/blog-details" class="nav-link">Blog
+                                                            Details</a></li>
+                                                    <li class="nav-item"><a style="cursor: pointer;"
+                                                            routerLink="/element" class="nav-link">Elements</a></li>
+                                                    <li class="nav-item"><a style="cursor: pointer;"
+                                                            routerLink="/job-details" class="nav-link">job
+                                                            Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item"><a style="cursor: pointer;" routerLink="/contact"
+                                                    class="nav-link">Contact</a></li>
+                                        </ul>
+                                    </div>
                                 </nav>
                             </div>
                             <!-- Header-btn -->
                             <div class="header-btn d-none f-right d-lg-block">
-                                <a style="cursor: pointer;" routerLink="/job-details" class="btn head-btn1">Register</a>
-                                <a style="cursor: pointer;" routerLink="/job-details" class="btn head-btn2">Login</a>
+                                <a style="cursor: pointer;" class="btn head-btn1" data-toggle="modal"
+                                    data-target="#registerModal">Register</a>
+                                <a style="cursor: pointer;" class="btn head-btn2" data-toggle="modal"
+                                    data-target="#login">Login</a>
+
+
+
+                                <!-- <div class="applicant" *ngIf="isrecruiter"> -->
+                                <!-- register modal -->
+                                <div class="modal fade" id="registerModal">
+
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" style="margin-left: 150px;">GET REGISTERED</h5>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="bouton"
+                                                    style="display: flex; justify-content: space-between;">
+                                                    <button type="button" class="btn btn-warning"
+                                                        style="margin-left: 20px;">As an Applicant</button>
+                                                    <button type="button" class="btn btn-warning"
+                                                        style="margin-right: 20px;">AS a Recruiter</button>
+                                                </div>
+                                                <div class="container justify-content-center"
+                                                    style="display: flex; margin: auto; margin-top: 20px; margin-bottom: 20px;">
+                                                    <img src="assets/img/icon/fb.png"
+                                                        style="width: 35px; height: 35px; margin-right: 15px;">
+                                                    <img src="assets/img/icon/g.png"
+                                                        style="width: 35px; height: 35px; margin-right: 15px;">
+                                                    <img src="assets/img/icon/in.png"
+                                                        style="width: 35px; height: 35px; margin-right: 15px;">
+                                                </div>
+
+                                                <!-- form -->
+                                                <form action="/action_page.php" class="needs-validation" novalidate>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="uname"
+                                                            placeholder="Username" name="uname" required>
+                                                        <div class="valid-feedback">Valid.</div>
+                                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" id="email"
+                                                            placeholder="Email" name="email" required>
+                                                        <div class="valid-feedback">Valid.</div>
+                                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" id="pwd"
+                                                            placeholder="Password" name="pswd" required>
+                                                        <div class="valid-feedback">Valid.</div>
+                                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" id="rpwd"
+                                                            placeholder="Repeat password" name="rpswd" required>
+                                                        <div class="valid-feedback">Valid.</div>
+                                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                                    </div>
+                                                    <div class="form-group form-check">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                name="remember" required> I agree on the terms.
+                                                            <div class="valid-feedback">Valid.</div>
+                                                            <div class="invalid-feedback">Check this checkbox to
+                                                                continue.</div>
+                                                        </label>
+                                                    </div>
+                                                    <div
+                                                        style="position: relative; float: right; display: inline-block;">
+                                                        <button type="submit" class="btn btn-warning">register</button>
+                                                    </div>
+                                                    <br /> <br /> <br /> <br /> <br /> <br />
+                                                    <div class="">
+                                                        <a>Already registered?</a>
+                                                        <a class="text-warning" href="#">Get connected now..</a>
+                                                    </div>
+                                                </form>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- end register modql -->
+
+
+                                <!-- The Modal -->
+                                <!-- login modal -->
+                                <div class="modal fade" id="login">
+
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" style="margin-left: 150px;">GET REGISTERED</h5>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <div class="bouton"
+                                                    style="display: flex; justify-content: space-between;">
+                                                    <button type="button" class="btn btn-warning"
+                                                        style="margin-left: 20px;">As an Applicant</button>
+                                                    <button type="button" class="btn btn-warning"
+                                                        style="margin-right: 20px;">AS a Recruiter</button>
+                                                </div>
+                                                <div class="container justify-content-center"
+                                                    style="display: flex; margin: auto; margin-top: 20px; margin-bottom: 20px;">
+                                                    <img src="assets/img/icon/fb.png"
+                                                        style="width: 35px; height: 35px; margin-right: 15px;">
+                                                    <img src="assets/img/icon/g.png"
+                                                        style="width: 35px; height: 35px; margin-right: 15px;">
+                                                    <img src="assets/img/icon/in.png"
+                                                        style="width: 35px; height: 35px; margin-right: 15px;">
+                                                </div>
+
+                                                <!-- form -->
+                                                <form action="/action_page.php" class="needs-validation" novalidate>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="uname"
+                                                            placeholder="Username" name="uname" required>
+                                                        <div class="valid-feedback">Valid.</div>
+                                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" id="pwd"
+                                                            placeholder="Password" name="pswd" required>
+                                                        <div class="valid-feedback">Valid.</div>
+                                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                                    </div>
+                                                    <div class="form-group form-check">
+                                                        <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                name="remember" required> Remember me.
+                                                            <div class="valid-feedback">Valid.</div>
+                                                            <div class="invalid-feedback">Check this checkbox to
+                                                                continue.</div>
+                                                        </label>
+                                                    </div>
+                                                    <div
+                                                        style="position: relative; float: right; display: inline-block;">
+                                                        <button type="submit" class="btn btn-warning">login</button>
+                                                    </div>
+                                                    <br /> <br /> <br /> <br /> <br /> <br />
+                                                    <div class="">
+                                                        <a>Not have account?</a>
+                                                        <a class="text-warning" href="#"
+                                                            data-target="#registerModal">Get
+                                                            registrer now..</a>
+                                                    </div>
+                                                </form>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- end login modal -->
+
                             </div>
                         </div>
                     </div>
                     <!-- Mobile Menu -->
+<<<<<<< HEAD
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
+=======
+                    <!-- <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div> -->
+>>>>>>> origin/awa
                 </div>
             </div>
-       </div>
-   </div>
+        </div>
+    </div>
     <!-- Header End -->
 </header>

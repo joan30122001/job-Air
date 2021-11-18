@@ -7,3 +7,11 @@
 .border-btn4{border:1px solid #fff;color:#fff}.btn.focus,.btn:focus{outline:0;box-shadow:none}.border-btn{border:1px solid #fb246a;color:#fb246a;font:"Muli",sans-serif;background:none;-moz-user-select:none;padding:27px 44px;margin:0px;text-transform:capitalize;cursor:pointer;display:inline-block;font-size:14px;font-weight:500;letter-spacing:1px;margin-bottom:0;border-radius:0px;position:relative;transition:color 0.4s linear;position:relative;overflow:hidden;margin:0}.border-btn::before{border:1px solid transparent;content:"";position:absolute;left:0;top:0;width:120%;height:105%;background:#da2461;z-index:-1;transition:transform 0.5s;transition-timing-function:ease;transform-origin:0 0;transition-timing-function:cubic-bezier(0.5, 1.6, 0.4, 0.7);transform:scaleY(0);border-radius:0}.border-btn:hover::before{transform:scaleY(1);order:2px solid transparent}
 .border-btn::before{border:1px solid transparent;content:"";position:absolute;left:0;top:0;width:120%;height:105%;background:#da2461;z-index:-1;transition:transform 0.5s;transition-timing-function:ease;transform-origin:0 0;transition-timing-function:cubic-bezier(0.5, 1.6, 0.4, 0.7);transform:scaleY(0);border-radius:0}.border-btn:hover::before{transform:scaleY(1);order:2px solid transparent}
 // .head-btn2{background:none;border:1px solid #fb246a;color:#fb246a}
+// .modal-title{font-size: 50px;}.modal-header{background-color: #da2461;}.formulaire{padding: 20px 0px 0px 0px;}.inner-form label{float: right;font-size: 30px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}.inner-form{padding: 0px 0px 20px 0px;}.inner-form input{width: 300px; height: 50px; border-radius: 5px;}.inner-form input::placeholder{text-align: center; font-size: 20px;}.row-form{padding: 20px 0px 30px 0px;}.align{display: inline-block; padding-left: 10px;}
+.remenber{ text-align: center;}.spa{margin-right: 10px;}.inner-oder{text-align: center; padding: 20px 0px 0px 0px;}
+// @media only screen and (min-width: 992px){.d-block{display: block!important;}}
+// @media (min-width:992px){.d-lg-none{display:block!important}}
+// .mobile_menu{position:absolute;right:0px;width:100%;z-index:99;top:0px}
+.navbar-toggler-icon {width: 20px;}
+// .align-items-center { border: 2px solid red;}
+@media only screen and (max-width: 850px){.logo{padding-left: 10%;}.menu-wrapper{float: right; position: unset;}}
